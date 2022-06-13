@@ -1,5 +1,5 @@
 const calculaValor = require('../src/calcula-valor.js')
-
+require('./extensoes')
 describe('calcularMontante', () => {
   test('Com uma prestação o montante é igual ao capital', () => {
     // Operação
@@ -65,13 +65,9 @@ describe('calcular prestações', () => {
     const prestacoes = calculaValor.calcularPrestacoes(montante, numeroPrestacoes)
 
     expect(prestacoes.length).toBe(numeroPrestacoes)
-    const soma = calculaValor.arredondar(prestacoes[0] + prestacoes[1] + prestacoes[2])
-    expect(soma).toBe(montante)
+    expect(prestacoes).tenhaSomaDeValoresIgual(montante)
 
-    for (let i = 0; i < prestacoes.length - 1; i++) {
-      const j = i + 1
-      expect(prestacoes[i]).toBeGreaterThanOrEqual(prestacoes[j])
-    }
+    expect(prestacoes).sejaDecrescente()
   })
 
   test('Desafio semi final', () => {
@@ -81,12 +77,8 @@ describe('calcular prestações', () => {
     const prestacoes = calculaValor.calcularPrestacoes(montante, numeroPrestacoes)
 
     expect(prestacoes.length).toBe(numeroPrestacoes)
-    const soma = calculaValor.arredondar(prestacoes[0] + prestacoes[1] + prestacoes[2])
-    expect(soma).toBe(+montante.toFixed(2))
+    expect(prestacoes).tenhaSomaDeValoresIgual(montante)
 
-    for (let i = 0; i < prestacoes.length - 1; i++) {
-      const j = i + 1
-      expect(prestacoes[i]).toBeGreaterThanOrEqual(prestacoes[j])
-    }
+    expect(prestacoes).sejaDecrescente()
   })
 })
