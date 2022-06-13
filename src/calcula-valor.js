@@ -10,20 +10,25 @@ function arredondar (valor) {
 }
 
 function calcularPrestacoes (montante, numeroParcelas) {
+  montante = arredondar(montante)
   const prestacaoBase = arredondar(montante / numeroParcelas)
   const array = Array(numeroParcelas).fill(prestacaoBase)
 
-  let resto = arredondar((montante - (prestacaoBase * numeroParcelas)))
+  const total = arredondar(numeroParcelas * prestacaoBase)
+  let resto = arredondar((montante - (total)))
 
   let index = 0
-  while (resto) {
+  while (resto > 0) {
     array[index] = arredondar(array[index] + 0.01)
     resto = arredondar(resto - 0.01)
     index++
   }
 
-  for (const prestacao of array) {
-    console.log(prestacao)
+  index = numeroParcelas - 1
+  while (resto < 0) {
+    array[index] = arredondar(array[index] - 0.01)
+    resto = arredondar(resto + 0.01)
+    index--
   }
 
   return array

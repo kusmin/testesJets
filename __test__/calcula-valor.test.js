@@ -73,4 +73,22 @@ describe('calcular prestações', () => {
       expect(prestacoes[i]).toBeGreaterThanOrEqual(prestacoes[j])
     }
   })
+
+  test('Desafio semi final', () => {
+    debugger
+
+    const numeroPrestacoes = 3
+    const montante = 101.994
+
+    const prestacoes = calculaValor.calcularPrestacoes(montante, numeroPrestacoes)
+
+    expect(prestacoes.length).toBe(numeroPrestacoes)
+    const soma = calculaValor.arredondar(prestacoes[0] + prestacoes[1] + prestacoes[2])
+    expect(soma).toBe(+montante.toFixed(2))
+
+    for (let i = 0; i < prestacoes.length - 1; i++) {
+      const j = i + 1
+      expect(prestacoes[i]).toBeGreaterThanOrEqual(prestacoes[j])
+    }
+  })
 })
