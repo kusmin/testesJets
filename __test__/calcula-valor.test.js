@@ -75,8 +75,6 @@ describe('calcular prestações', () => {
   })
 
   test('Desafio semi final', () => {
-    debugger
-
     const numeroPrestacoes = 3
     const montante = 101.994
 
