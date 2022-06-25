@@ -1,0 +1,6 @@
+version: '3.8'
+services:
+  db-teste-jest:
+    build: ./bd
+    ports:
+      - '12345:5432'

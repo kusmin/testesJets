@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1655405034889" clover="3.2.0">
-  <project timestamp="1655405034889" name="All files">
-    <metrics statements="35" coveredstatements="31" conditionals="2" coveredconditionals="1" methods="9" coveredmethods="6" elements="46" coveredelements="38" complexity="0" loc="35" ncloc="35" packages="2" files="2" classes="2"/>
+<coverage generated="1655751840367" clover="3.2.0">
+  <project timestamp="1655751840367" name="All files">
+    <metrics statements="83" coveredstatements="68" conditionals="10" coveredconditionals="5" methods="14" coveredmethods="11" elements="107" coveredelements="84" complexity="0" loc="83" ncloc="83" packages="2" files="5" classes="5"/>
     <package name="__test__">
       <metrics statements="13" coveredstatements="9" conditionals="2" coveredconditionals="1" methods="6" coveredmethods="3"/>
       <file name="extensoes.js" path="/home/renan/pessoal/estudo/testesJets/__test__/extensoes.js">
@@ -22,7 +22,26 @@
       </file>
     </package>
     <package name="src">
-      <metrics statements="22" coveredstatements="22" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+      <metrics statements="70" coveredstatements="59" conditionals="8" coveredconditionals="4" methods="8" coveredmethods="8"/>
+      <file name="app.js" path="/home/renan/pessoal/estudo/testesJets/src/app.js">
+        <metrics statements="16" coveredstatements="15" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="20" count="4" type="stmt"/>
+        <line num="21" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="25" count="3" type="stmt"/>
+        <line num="26" count="3" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="34" count="3" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
+      </file>
       <file name="calcula-valor.js" path="/home/renan/pessoal/estudo/testesJets/src/calcula-valor.js">
         <metrics statements="22" coveredstatements="22" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
         <line num="2" count="2" type="stmt"/>
@@ -46,7 +65,45 @@
         <line num="30" count="1" type="stmt"/>
         <line num="31" count="1" type="stmt"/>
         <line num="34" count="5" type="stmt"/>
-        <line num="37" count="1" type="stmt"/>
+        <line num="37" count="2" type="stmt"/>
+      </file>
+      <file name="consulta-cliente.js" path="/home/renan/pessoal/estudo/testesJets/src/consulta-cliente.js">
+        <metrics statements="19" coveredstatements="9" conditionals="6" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="12" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="19" count="3" type="stmt"/>
+        <line num="26" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="29" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="46" count="0" type="stmt"/>
+        <line num="48" count="0" type="stmt"/>
+        <line num="57" count="1" type="stmt"/>
+      </file>
+      <file name="db.js" path="/home/renan/pessoal/estudo/testesJets/src/db.js">
+        <metrics statements="13" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="54" count="1" type="stmt"/>
+        <line num="55" count="1" type="stmt"/>
+        <line num="57" count="1" type="stmt"/>
+        <line num="58" count="1" type="stmt"/>
+        <line num="60" count="1" type="stmt"/>
+        <line num="61" count="1" type="stmt"/>
+        <line num="63" count="1" type="stmt"/>
       </file>
     </package>
   </project>
